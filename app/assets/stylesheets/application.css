@@ -12,19 +12,32 @@
  *= require_tree .
 */
 
-.logo-wrap {
+/* Reset */
+
+body {
+	margin: 0;
+	padding: 0;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+
+/* Logo */
+
+.logo-wrap {
 	text-align: center;
 	width: 240px;
 	margin: auto;
 }
 
+
 .logo {
 	position:relative;
 	padding:15px;
 	margin:1em 0 3em;
-	color:#fff;
 	background:#c81e2b;
+	font-size: xx-large;
+	font-weight: bold;
 	/* css3 */
 	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
 	background:-moz-linear-gradient(#f04349, #c81e2b);
@@ -33,8 +46,12 @@
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
-	font-size: xx-large;
-	font-weight: bold;
+}
+
+.logo a{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+	color:#fff;
 }
 
 /* Variant : for top positioned triangle
@@ -46,3 +63,72 @@
 	background:-o-linear-gradient(#c81e2b, #f04349);
 	background:linear-gradient(#c81e2b, #f04349);
 }
+
+/* Notifications */
+
+notifications div{
+	text-align: center;
+	width: auto;
+	margin: 0px;
+}
+
+notifications p{
+	padding: 10px;
+}
+
+notifications p.notice{
+	background-color: #8dfdc6;
+}
+
+notifications p.alert{
+	background-color: #fff7c1;
+}
+
+notifications p.error{
+	background-color: #ffa18f;
+}
+
+/* Status */
+
+status div {
+	width: 1060px;
+}
+
+status p {
+	font-size: small;
+	text-align: right;
+}
+
+
+
+/* Forms */
+
+div.main-form {
+ text-align: center;
+ background-color: #e4e4e4;
+ width: 400px;
+ margin: auto;
+ padding: 20px 50px;
+ /* CSS3 */
+ -webkit-border-radius:10px;
+ -moz-border-radius:10px;
+ border-radius:10px;
+}
+
+div.form-botton-links{
+	text-align: left;
+	padding: 10px;
+}
+
+
+div.main-form input{
+	margin-bottom: 10px;
+}
+
+div.main-form label{
+	margin-bottom: 50px;
+}
+
+
+
+

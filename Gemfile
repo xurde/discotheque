@@ -39,4 +39,5 @@ gem 'unicorn'
 
 #Aplication gems
 
-gem 'devise'
+gem 'devise', '~> 2.1'
+gem 'devise-encryptable'

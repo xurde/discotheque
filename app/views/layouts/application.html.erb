@@ -8,11 +8,20 @@
 </head>
 <body>
   <notifications>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div>
+    <% if notice %><p class="notice"><%= notice %></p><% end %>
+    <% if alert %><p class="alert"><%= alert %></p><% end %>
+    </div>
   </notifications>
+  <status>
+    <div>
+      <% if user_signed_in? %>
+      <p>You are now logged in as <%= current_user.name || current_user.email %> | <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+      <% end %>
+    </div>
+  </status>
   <header class="logo-wrap">
-    <p class='logo'>Discotheque</p>
+    <p class='logo top'><%= link_to 'Discotheque', root_path %></p>
   </header>
 
 <%= yield %>

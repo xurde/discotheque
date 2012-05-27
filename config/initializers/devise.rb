@@ -7,7 +7,7 @@ Devise.setup do |config|
   config.mailer_sender = "no-reply@discotheque.dev"
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = "Devise::Mailer"
+  config.mailer = "Devise::Mailer"
 
   # Automatically apply schema changes in tableless databases
   config.apply_schema = false
@@ -172,7 +172,8 @@ Devise.setup do |config|
   # :authlogic_sha512 (then you should set stretches above to 20 for default behavior)
   # and :restful_authentication_sha1 (then you should set stretches to 10, and copy
   # REST_AUTH_SITE_KEY to pepper)
-  # config.encryptor = :sha512
+  config.encryptor = :sha512
+  #config.encryptor = :md5
 
   # ==> Configuration for :token_authenticatable
   # Defines name of the authentication token params key

@@ -1,4 +1,5 @@
 Discotheque::Application.routes.draw do
+  
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -15,6 +16,7 @@ Discotheque::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+  #resources :users
   resources :albums
 
   # Sample resource route with options:
