@@ -16,7 +16,7 @@
   <status>
     <div>
       <% if user_signed_in? %>
-      <p>You are now logged in as <%= current_user.name || current_user.email %> | <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+      <p>You are now logged in as <%= current_user.name || current_user.email %> (<%= link_to 'Account', edit_user_registration_path %>) | <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
       <% end %>
     </div>
   </status>
