@@ -1,0 +1,7 @@
+<div class="main-form">
+  <h2><%= @album.band %> - <%= @album.title %> (<%= @album.year %>)</h2>
+  <p><%= image_tag @album.cover(:medium) %></p>
+  <div class="form-botton-links">
+    <%= link_to "Go Back", albums_path %>
+  </div>
+</div>

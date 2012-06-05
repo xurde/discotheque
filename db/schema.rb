@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120525210106) do
+ActiveRecord::Schema.define(:version => 20120604085417) do
+
+  create_table "albums", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "band",               :limit => 160
+    t.string   "title",              :limit => 160
+    t.integer  "year"
+    t.string   "cover_file_name"
+    t.string   "cover_content_type"
+    t.integer  "cover_file_size"
+    t.datetime "cover_updated_at"
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :limit => 128,                 :null => false

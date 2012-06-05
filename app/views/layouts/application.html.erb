@@ -16,7 +16,8 @@
   <status>
     <div>
       <% if user_signed_in? %>
-      <p>You are now logged in as <%= current_user.name || current_user.email %> (<%= link_to 'Account', edit_user_registration_path %>) | <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+      <box class="left"><%= link_to "Add New Album", new_album_path %></box>
+      <box class="right">You are now logged in as <%= current_user.name || current_user.email %> (<%= link_to 'Account', edit_user_registration_path %>) | <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></box>
       <% end %>
     </div>
   </status>

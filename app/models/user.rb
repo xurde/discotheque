@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
   validates_length_of :password, :within => 5..15, :message => "must be between 5 and 15 chars long", :if => :password_present?
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :create
   
+  has_many :albums
+  
   
   private
   

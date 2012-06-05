@@ -20,7 +20,9 @@ body {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-
+li {
+	list-style-type: none;
+}
 
 /* Logo */
 
@@ -91,12 +93,24 @@ notifications p.error{
 /* Status */
 
 status div {
-	width: 1060px;
+	width: 860px;
+	margin: auto;
 }
 
-status p {
+status box {
+	width: 400px;
+}
+
+status box.left {
+	font-size: small;
+	text-align: left;
+}
+
+status box.right {
 	font-size: small;
 	text-align: right;
+	float: right;
+	margin-top: 5px;
 }
 
 
@@ -105,6 +119,7 @@ status p {
 
 div.main-form {
  text-align: center;
+ clear: both;
  background-color: #e4e4e4;
  width: 400px;
  margin: auto;
@@ -129,6 +144,30 @@ div.main-form label{
 	margin-bottom: 50px;
 }
 
+
+/* Library */
+
+div.big-wrapper {
+	width: 900px;
+	margin: auto;
+}
+
+
+div.big-wrapper div.searchbox{
+	width: 300px;
+	float: right;
+	margin-top: -50px;
+	text-align: right;
+}
+
+
+library ul{
+	display: inline-block;
+}
+
+library li{
+	display: inline-block;
+}
 
 
 

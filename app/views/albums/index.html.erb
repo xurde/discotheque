@@ -1,0 +1,18 @@
+<div class="big-wrapper">
+  <h1>Your Library</h1>
+  <div class="searchbox">
+    <%= form_tag albums_search_path %>
+      <%= text_field_tag :querystring %>
+      <%= submit_tag 'Search' %>
+  </div>
+  <% if @albums.empty? %>
+    <p>You have no album on your library. This is quite boring</p>
+  <% else %>
+  <library class="container">
+    <p><strong><%= @albums.size %></strong> albums</p>
+    <ul>
+      <%= render :partial => 'album', :collection => @albums %>
+    </ul>
+  </library>
+  <% end %>
+</div>

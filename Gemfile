@@ -39,9 +39,10 @@ gem 'unicorn'
 
 #Aplication gems
 
+gem 'dynamic_form'
 gem 'devise', '~> 2.1'
 gem 'devise-encryptable'
-
+gem "paperclip", "~> 3.0"
 
 # Testing gems
 
