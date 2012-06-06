@@ -40,3 +40,6 @@ describe "user sign out" do
     response.should be_success
   end
 end
+
+# describe UsersController do
+# end
