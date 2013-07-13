@@ -1,3 +1,5 @@
 == Sample Rails App
 
 Discotheque is just a very simple rails exercise.
+
+code quality :: {<img src="https://codeclimate.com/repos/51e03fcfc7f3a3098901d4d2/badges/d24dbb34a475281d4a38/gpa.png" alt="code climate">}[https://codeclimate.com/github/rdoc/rdoc]
